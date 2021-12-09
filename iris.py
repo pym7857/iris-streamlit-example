@@ -11,12 +11,10 @@ fig = px.scatter(df,
                 x = 'sepal_length',
                 y = 'sepal_width',
                 color = 'species')
-
 st.write('''
 # Iris 데이터 
 2D Scatter Plot
 ''')
-
 st.plotly_chart(fig)
 
 fig = px.scatter_3d(df,
@@ -26,10 +24,8 @@ fig = px.scatter_3d(df,
                 color = 'petal_length',
                 symbol = 'species',
                 opacity = 0.7)
-
 st.write('''
 # Iris 데이터 
 3D Scatter Plot
 ''')
-
 st.plotly_chart(fig)
